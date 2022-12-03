@@ -20,7 +20,7 @@ const SearchContainer = () => {
   } = useAppContext()
 
   const handleSearch = (e) => {
-    if (isLoading) return
+    handleChange({ name: e.target.name, value: e.target.value })
   }
 
   const handleSubmit = (e) => {
